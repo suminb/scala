@@ -7,5 +7,8 @@ class MainSpec extends FlatSpec {
     case "x" => 5
     case "y" => 7
   }
-  assert(eval(exp, env) == 24)
+
+  "Expression" should "be evaluated correctly" in {
+    assert(eval(exp, env) == 24)
+  }
 }
